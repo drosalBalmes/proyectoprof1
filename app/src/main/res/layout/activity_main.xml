@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Juan Matesanz"
+        android:textSize="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="90dp"
+        android:textColor="@color/white"/>
+        
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_launcher_background"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/myRectangleView"
+        android:layout_width="410dp"
+        android:layout_height="5dp"
+        android:background="@drawable/horizontal_divider"/>
+
+    <TextView
+        android:id="@+id/cursostxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cursos"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        android:layout_marginTop="45dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclercurs"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <TextView
+        android:id="@+id/modulstxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Moduls"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        android:layout_marginTop="45dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclermoduls"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/ufstxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UFS"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        android:layout_marginTop="45dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerufs"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"/>
+
+
+
+</LinearLayout>
